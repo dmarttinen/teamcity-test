@@ -35,5 +35,11 @@ changeProject(DslContext.projectId) {
         update {
             param("OctoSpace", "Spaces-83")
         }
+        expect {
+            param("OctoSpaceName", "Onion DevOps")
+        }
+        update {
+            param("OctoSpaceName", "Dale Marttinen")
+        }
     }
 }
