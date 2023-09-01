@@ -23,5 +23,11 @@ changeProject(DslContext.projectId) {
         update {
             password("AzPassword", "credentialsJSON:ee02187b-e094-48aa-aa01-a6d574d374b7", label = "AzPassword")
         }
+        expect {
+            param("OctoProject", "teamcity-dotnet-7-container-apps")
+        }
+        update {
+            param("OctoProject", "onion-architecture-dotnet-7-container-apps")
+        }
     }
 }
